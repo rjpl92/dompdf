@@ -4790,6 +4790,8 @@ EOT;
      */
     protected function addImagePngAlpha($file, $x, $y, $w, $h, $byte)
     {
+       set_time_limit(3000);
+
         // generate images
         $img = imagecreatefrompng($file);
 
